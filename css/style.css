@@ -1,0 +1,192 @@
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url(../fonts/RobotoCondensed-Regular.ttf);
+  }
+
+* {
+	margin:0px; padding:0px;
+}
+html, body {
+	height:100%;
+	max-width:100%;
+	overflow-x: hidden;
+	font-size:15px;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+	color:#333;
+	background-color:#fff;
+	display:flex;
+	flex-direction:column;
+}
+h1 {
+	font-weight:800;
+	text-transform:uppercase;
+}
+nav {
+	z-index:1337;
+	background-color:#fff;
+	color:#333;
+}
+.navbar {
+	height: 90px;
+	background-color:#fff;
+	filter: drop-shadow(0 0 5px #f5f5f5);
+}
+.nav-link {
+	font-size: 22px;
+	line-height: 28px;
+	margin: 0 15px;
+}
+.content {
+	margin-top: 120px;
+	flex: 1 0 auto;
+}
+.space-md {
+	padding-top:30px;
+}
+a, a:visited {
+	color:#898989;
+}
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+footer {
+	color:#898989;
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color:#fff;
+	font-size: 13px;
+}
+footer a {
+	text-decoration:underline;
+}
+.img-gallery img {
+	display:block;
+	width:100%;
+	height:auto;
+}
+.img-preview {
+	object-fit: cover;
+	width:100%;
+	height:300px;
+}
+.intro {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#logo {
+	height: 50px;
+}
+.nav-item {
+	float:left;
+}
+.navbar-toggler {
+	border:0;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+.navbar-open-toggler svg {
+	width: 24px;
+}
+#topper {
+	display: none;
+	position: fixed;
+	right: 25px;
+	bottom: 10px;
+	z-index: 99;
+	width:45px;
+	height:45px;
+	background-color:#fff;
+	color:#eee;
+	text-align:center;
+	border:1px solid #eee;
+	filter: drop-shadow(0 0 5px #eee);
+}
+#topper svg {
+	height: 32px;
+}
+
+.w-100 {
+	width:100%;
+}
+
+/* lightbox */
+.lb-outerContainer {
+	border-radius: 0;
+}
+.lb-dataContainer {
+	background-color: #fff;
+}
+.lightboxOverlay {
+	background-color: #fff;
+}
+.lb-data {
+	color:#333;
+}
+.lb-data .lb-caption {
+	font-size: 16px;
+	line-height: 24px;
+}
+.lb-data .lb-number {
+	color:#333;
+}
+
+@media (max-width: 767px) {
+	#logo {
+		height: 35px;
+	}
+	.content {
+		margin-top: 75px;
+	}
+	.navbar {
+		height: 60px;
+	}
+    .navbar-collapse {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100vh;
+		background-color: #fff;
+    }
+	.navbar-nav {
+		margin-top: 30px;
+	}
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+	footer {
+		margin-bottom: 75px;
+	}
+}
+@media (max-width: 810px) {
+	#topper {
+		right: 10px;
+	}
+	.imprint {
+		margin-left: 5px;
+	}
+}
+@media (min-width: 1400px) { 
+	.container {
+		width: 1170px;
+	}
+}
