@@ -185,8 +185,14 @@ footer a {
 		margin-left: 5px;
 	}
 }
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
 	.container {
 		width: 1170px;
 	}
+}
+
+#display {
+  width: 1201px;
+  height: 700px;
+  float: left;
 }
